@@ -1,4 +1,6 @@
-require 'sinatra'
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
 
 get "/" do
   erb :homepage, :layout => :boilerplate
